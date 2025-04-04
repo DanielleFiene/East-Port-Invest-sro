@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png">
     <link rel="manifest" href="./resources/favicon/site.webmanifest">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/56e9e1144f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/CSS/swiper.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link href="resources/CSS/normalize.css" rel="stylesheet" type="text/css">
@@ -24,35 +24,35 @@
     <!--header section-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="" class="nav__logo">East Port Invest<i class='bx bxs-buildings'></i></a>
+            <a href="" class="nav__logo">East Port Invest</a>
 
             <div class="nav__menu">
                 <ul class="nav__list">
 
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home-alt-2'></i>
+                            <i class="fa-solid fa-house"></i>
                             <span>Home</span>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#popular" class="nav__link">
-                            <i class='bx bx-building-house'></i>
+                            <i class="fa-solid fa-fire"></i>
                             <span>Properties</span>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#value" class="nav__link">
-                            <i class='bx bx-star'></i>
+                            <i class="fa-solid fa-star"></i>
                             <span>Value</span>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class='bx bx-envelope'></i>
+                            <i class="fa-solid fa-envelope"></i>
                             <span>Contact</span>
                         </a>
                     </li>
@@ -84,6 +84,7 @@
                     <div class="home__buttons">
                         <a href="#olomouc-section" class="home__button">Olomouc</a>
                         <a href="#liberec-section" class="home__button">Liberec</a>
+                        <a href="#teplice-section" class="home__button">Teplice</a>
                         <a href="#broumov-section" class="home__button">Broumov</a>
                     </div>
                 </div>
@@ -187,10 +188,10 @@
 
                     </div>
                     <div class="swiper-button-next">
-                        <i class='bx bxs-chevron-right'></i>
+                        <i class="fa-solid fa-chevron-right"></i>
                     </div>
                     <div class="swiper-button-prev">
-                        <i class='bx bxs-chevron-left'></i>
+                        <i class="fa-solid fa-chevron-left"></i>
                     </div>
                 </div>
             </div>
@@ -275,6 +276,31 @@
                 </div>
             </div>
         </section>
+
+        <br>
+        <section id="teplice-section" class="city-section">
+            <div class="container">
+                <h2 class="section__title">
+                    Teplice
+                    <span> 
+                        Properties
+                    </span> 
+                </h2>
+                <p>Teplice, a historic spa city in the Czech Republic, is famous for its thermal springs and vibrant culture. Located just 20 km from the German border and 50 km from Dresden, it offers excellent business opportunities and a high quality of life with a perfect blend of nature and urban living.</p>
+                <div class="property-list">
+                    <a href="#.html" target="_blank" class="property-item" id="item-link">
+                        <img src="resources/images/Teplice.png" alt="Commercial space in Teplice">
+                        <div class="property-info">
+                            <h3 class="popular__title">Prime Shopfront in Teplice | Spacious & Bright</h3>
+                            <p>Prime commercial space in the heart of Teplice, featuring large display windows for maximum visibility, a spacious interior, and an excellent location for retail or business opportunities.</p>
+                            <h2 class="popular__price">
+                                <span>€</span> 520.000,-
+                            </h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
         
         <br>
         <section id="broumov-section" class="city-section">
@@ -291,7 +317,8 @@
                         <img src="resources/images/Martinkovice1.jpg" alt="Country house for sale in Martínkovice">
                         <div class="property-info">
                             <h3 class="popular__title">Renovated country house in Martínkovice</h3>
-                            <p>Country house with multiple outbuildings and a covered swimming pool on a plot of approximately 10,121 m².</p>
+                            <p>A charming country house with multiple outbuildings, a covered swimming pool, and expansive grounds spanning approximately 10,121 m², offering space, privacy, and endless possibilities.</p>
+
                             <h2 class="popular__price">
                                 <span>€</span> 520.000,-
                             </h2>
@@ -309,7 +336,17 @@
                         </div>
                     </a>
                     
-                    <!-- More property items -->
+                    <a href="#" target="_blank" class="property-item" id="item-link">
+                        <img src="resources/images/krinice steny.jpg" alt="Country house for sale in Křinice">
+                        <div class="property-info">
+                            <h3 class="popular__title">Spacious country house in Křinice</h3>
+                            <p>A spacious country house with a professional dressage arena, 6 indoor stables, expansive horse fields, and a barn with a car lift for maintenance.</p>
+
+                            <h2 class="popular__price">
+                                <span>€</span> 1.000.000,-
+                            </h2>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -342,12 +379,12 @@
 
                         <div class="value__accordion-item">
                             <header class="value__accordion-header">
-                                <i class='bx bx-shield value__accordion-icon'></i>
+                                <i class="fa-solid fa-shield"></i>
                                 <h3 class="value__accordion-title">
                                     Best property locations on the market
                                 </h3>
                                 <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
+                                    <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                             </header>
 
@@ -361,12 +398,12 @@
 
                         <div class="value__accordion-item">
                             <header class="value__accordion-header">
-                                <i class='bx bx-shield value__accordion-icon'></i>
+                                <i class="fa-solid fa-shield"></i>
                                 <h3 class="value__accordion-title">
                                     Well maintained properties
                                 </h3>
                                 <div class="value__accordion-arrow">
-                                    <i class='bx bxs-down-arrow'></i>
+                                    <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                             </header>
 
@@ -411,7 +448,7 @@
                     <div class="contact__card">
                         <div class="contact__card-box">
                             <div class="contact__card-info">
-                                <i class='bx bxs-phone-incoming'></i>
+                                <i class="fa-solid fa-phone"></i>
                                 <div>
                                     <h3 class="contact__card-title">
                                         Phone
@@ -426,7 +463,7 @@
                         </div>
                         <div class="contact__card-box">
                             <div class="contact__card-info">
-                                <i class='bx bx-envelope'></i>
+                                <i class="fa-solid fa-envelope"></i>
                                 <div>
                                     <h3 class="contact__card-title">
                                         Email
@@ -444,7 +481,7 @@
             </div>
         </section>
 
-        <!--subsribe or call to action button-->
+        <!--call to action button-->
         <section class="subscribe section">
             <div class="subscribe__container container">
                 <h1 class="subscribe__title">

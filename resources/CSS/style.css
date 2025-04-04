@@ -645,7 +645,7 @@ nav {
 /* Each individual property item */
 .property-item {
   flex: 1 1 300px;
-  max-height: 500px;
+  max-height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -665,8 +665,9 @@ nav {
 
 /* Image styling */
 .property-item img {
-  width: 80%;
+  width: 100%;
   height: auto;
+  max-height: 600px;
   border-radius: 8px;
 }
  #item-link:hover {
@@ -751,7 +752,7 @@ nav {
   cursor: pointer;
 }
 
-.value__accordion-icon {
+.fa-shield {
   background-color: var(--first-color-lighten);
   padding: 5px;
   border-radius: .25rem;
@@ -771,13 +772,9 @@ nav {
   padding: .25rem;
   color: var(--first-color);
   border-radius: 2px;
-  font-size: 10px;
+  font-size: 15px;
   margin-left: auto;
   transition: .3s;
-}
-
-.value__accordion-arrow i {
-  transition: .4s;
 }
 
 .value__accordion-description {
