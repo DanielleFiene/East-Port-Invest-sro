@@ -855,6 +855,9 @@ nav {
   padding: 1.25rem .75rem;
   border-radius: .5rem;
   transition: .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact__card-info {
@@ -892,6 +895,7 @@ nav {
   box-shadow: none;
   transition: all .4s ease;
   justify-content: center;
+  margin-top: auto;
 }
 
 .contact__card-button:hover {
