@@ -553,6 +553,7 @@ nav {
 .popular__img {
   border-radius: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1.5rem;
   max-height: 60vh;
 }
 
@@ -645,12 +646,11 @@ nav {
 /* Each individual property item */
 .property-item {
   flex: 1 1 300px;
-  max-height: 800px;
+  max-height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid var(--border-color);
   padding: 1.5rem 0.5rem;
   border-radius: 1rem;
   margin: 0 auto;
@@ -667,9 +667,12 @@ nav {
 .property-item img {
   width: 100%;
   height: auto;
+  margin-top: 1rem;
   max-height: 600px;
-  border-radius: 8px;
+  object-fit: contain;
 }
+
+
  #item-link:hover {
   text-decoration: none;
  }
