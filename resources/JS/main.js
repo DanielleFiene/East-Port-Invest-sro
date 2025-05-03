@@ -19,7 +19,7 @@ var swiper = new Swiper(".popular__container", {
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 3000,  // 3000ms = 3 seconden
+        delay: 5000,  // 3000ms = 3 seconden
         disableOnInteraction: false,  // Blijft autoplayen zelfs als de gebruiker interactie heeft
     }
 });
