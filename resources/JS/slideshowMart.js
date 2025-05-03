@@ -4,7 +4,7 @@ const images = [
     './resources/images/Martinkovice1.jpg',
     './resources/images/Martinkovice2.jpg',
     './resources/images/Martinkovice3.jpg',
-    './resources/images/overzicht.webp',
+    './resources/images/overzicht.png',
     './resources/images/Martinkovice4.jpg',
     './resources/images/Martinkovice5.jpg',
     './resources/images/Martinkovice6.jpg',
