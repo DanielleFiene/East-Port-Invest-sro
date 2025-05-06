@@ -60,13 +60,29 @@
 
                 <div class="property-gallery">
                     <div class="property-image">
-                        <img src="./resources/images/martinkovice/Martinkovice1.webp" alt="Martinkovice Estate" id="current-image">
+                        <img src="./resources/images/martinkovice/Martinkovice1.webp" 
+                             alt="Martinkovice Estate" 
+                             id="current-image"
+                             onClick="openModal(currentIndex)">
                     </div>
                     <div class="gallery-navigation">
                         <button class="prev" onclick="changeImage(-1)">&#10094;</button>
                         <button class="next" onclick="changeImage(1)">&#10095;</button>
                     </div>
                 </div>
+
+                            <!-- modal -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="modal-navigation">
+                    <button class="prev" id="prevBtn">&#10094;</button>
+                    <button class="next" id="nextBtn">&#10095;</button>
+                  </div>
+                  <img id="modalImage" src="" alt="">
+                </div>
+              </div>
+
                 <div class="property-thumbnails">
                     <img src="./resources/images/martinkovice/binnenplaats1.webp" alt="garden" class="thumbnail">
                     <img src="./resources/images/martinkovice/keuken1.webp" alt="Kitchen" class="thumbnail">
@@ -151,24 +167,35 @@
             <div class="contact-form container">
                 <h3>Contact us</h3>
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="fa4a4a01-029f-45e0-82f3-78c764b97130">
+                    <input type="hidden" name="access_key" value="909717ad-76f2-4136-a064-200414d2ffbd">
+                    
                     <label for="name" class="label">Your name</label><br>
-                    <input id="name" name="name" type="text" id="message" class="input" required autocomplete="off" /><br>
+                    <input id="name" name="name" type="text" class="input" required autocomplete="off"><br>
+                    
                     <label for="email" class="label">Your e-mail</label><br>
-                    <input id="email" name="email" type="email" class="input" id="email" size="30" required autocomplete="off" /><br>
+                    <input id="email" name="email" type="email" class="input" size="30" required autocomplete="off"><br>
+                    
                     <label for="message" class="label">Your message</label><br>
-                    <textarea id="message" name="message" id="message" class="input" required></textarea>
-                     <!-- Honeypot Spam Protection -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <!-- GDPR Checkbox -->
-                        <br>
-                        <label for="gdpr" class="label">
-                            <input type="checkbox" id="gdpr" name="gdpr" required>
-                            <span>I agree to the processing of my personal data in accordance with the <a href="./resources/PDF/Privacy Policy EPI.pdf" target="_blank">privacy policy</a>.</span>
-                        </label>
-                    <br><br>
+                    <textarea id="message" name="message" class="input" required></textarea><br>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <label style="display:none;" aria-hidden="true">
+                        Do not fill this out if you're human:
+                        <input type="text" name="botcheck">
+                    </label>
+            
+                    <!-- GDPR Checkbox -->
+                    <label for="gdpr" class="label">
+                        <input type="checkbox" id="gdpr" name="gdpr" required>
+                        <span>I agree to the processing of my personal data in accordance with the 
+                            <a href="./resources/PDF/Privacy Policy EPI.pdf" target="_blank">privacy policy</a>.
+                        </span>
+                    </label><br><br>
+                    
                     <button type="submit" class="button">Send Message</button>
                 </form>
+            </div>
+            
             </div>
         </div>
     </section>
@@ -226,6 +253,7 @@
 
     <!--js-->
     <script src="./resources/JS/slideshowMart.js"></script>
+    <script src="./resources/JS/modalMart.js"></script>
 </body>
 
 </html>

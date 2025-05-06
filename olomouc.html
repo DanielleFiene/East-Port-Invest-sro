@@ -58,19 +58,36 @@
               </div>
               
 
-                <div class="property-gallery">
-                    <div class="property-image">
-                        <img src="./resources/images/olomouc/Riegrova front 1.jpg" alt="olomouc building" id="current-image">
-                    </div>
-                    <div class="gallery-navigation">
-                        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-                        <button class="next" onclick="changeImage(1)">&#10095;</button>
-                    </div>
+              <div class="property-gallery">
+                <div class="property-image">
+                    <img src="./resources/images/olomouc/Riegrova front 1.webp" 
+                         alt="Riegrova front 1" 
+                         id="current-image"
+                         onclick="openModal(currentIndex)">
                 </div>
+                <div class="gallery-navigation">
+                    <button class="prev" onclick="changeImage(-1)" aria-label="Previous image">&#10094;</button>
+                    <button class="next" onclick="changeImage(1)" aria-label="Next image">&#10095;</button>
+                </div>
+            </div>
+            <!-- modal -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="modal-navigation">
+                    <button class="prev" id="prevBtn">&#10094;</button>
+                    <button class="next" id="nextBtn">&#10095;</button>
+                  </div>
+                  <img id="modalImage" src="" alt="">
+                </div>
+              </div>
+              
+
+
                 <div class="property-thumbnails">
-                    <img src="./resources/images/olomouc/Riegrova front 2.jpg" alt="olomouc building front view" class="thumbnail">
-                    <img src="./resources/images/olomouc/Riegrova RockPoint store.jpg" alt="Olomouc retail" class="thumbnail">
-                    <img src="./resources/images/olomouc/Appartment kitchen.jpg" alt="Olomouc kitchen" class="thumbnail">
+                    <img src="./resources/images/olomouc/Riegrova front 2.webp" alt="olomouc building front view" class="thumbnail">
+                    <img src="./resources/images/olomouc/Riegrova RockPoint store.webp" alt="Olomouc retail" class="thumbnail">
+                    <img src="./resources/images/olomouc/Appartment kitchen.webp" alt="Olomouc kitchen" class="thumbnail">
                 </div>
             </div>
 
@@ -89,9 +106,9 @@
                     </ul>
 
                     <div class="property-thumbnails">
-                        <img src="./resources/images/olomouc/store 1.jpg" alt="Rockpoint inside 1" class="thumbnail">
-                        <img src="./resources/images/olomouc/store 2.jpg" alt="Rockpoint inside 2" class="thumbnail">
-                        <img src="./resources/images/olomouc/store 3.jpg" alt="Rockpoint inside 3" class="thumbnail">
+                        <img src="./resources/images/olomouc/store 1.webp" alt="Rockpoint inside 1" class="thumbnail">
+                        <img src="./resources/images/olomouc/store 2.webp" alt="Rockpoint inside 2" class="thumbnail">
+                        <img src="./resources/images/olomouc/store 3.webp" alt="Rockpoint inside 3" class="thumbnail">
                     </div>
 
                     <br>
@@ -104,21 +121,23 @@
                 <li>Hardwood flooring and period accents</li>
             </ul>
                     <div class="property-thumbnails">
-                        <img src="./resources/images/olomouc/Olomouc kitchen 2.jpg" alt="kitchen" class="thumbnail">
-                        <img src="./resources/images/olomouc/hal appartement.jpg" alt="hal appartement" class="thumbnail">
-                        <img src="./resources/images/olomouc/bathroom 1.jpg" alt="bathroom" class="thumbnail">
+                        <img src="./resources/images/olomouc/Olomouc kitchen 2.webp" alt="kitchen" class="thumbnail">
+                        <img src="./resources/images/olomouc/hal appartement.webp" alt="hal appartement" class="thumbnail">
+                        <img src="./resources/images/olomouc/bathroom 1.webp" alt="bathroom" class="thumbnail">
                     </div>
 
                     <br>
                     <h2>Financial Highlights</h2>
-            <ul>
-                <li><strong>Price:</strong> € 2.500.000,-</li>
-                <li><strong>Total m²:</strong> 915,5 m²</li>
-                <li><strong>Floors:</strong> 4</li>
-                <li><strong>Retail Tenant:</strong> RockPoint (stable lease)</li>
-                <li><strong>Residential Units:</strong> 7</li>
-                <li><strong>Condition:</strong> Fully renovated, move-in ready</li>
-            </ul>
+                    <ul>
+                        <li><strong>Price:</strong> € 2.500.000,-</li>
+                        <li><strong>Total m²:</strong> 915,5 m²</li>
+                        <li><strong>Floors:</strong> 4</li>
+                        <li><strong>Retail Tenant:</strong> RockPoint (stable lease)</li>
+                        <li><strong>Residential Units:</strong> 7</li>
+                        <li><strong>Condition:</strong> Fully renovated, move-in ready</li>
+                        <li><strong>Resale Potential:</strong> The 7 apartments and retail space can be resold individually, offering flexibility and potential for added return on investment.</li>
+                    </ul>
+                    
             <br>
             <h2>Advantages of Investing in Olomouc</h2>
 <ul>
@@ -141,22 +160,31 @@
             <div class="contact-form container">
                 <h3>Contact us</h3>
                 <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="fa4a4a01-029f-45e0-82f3-78c764b97130">
+                    <input type="hidden" name="access_key" value="909717ad-76f2-4136-a064-200414d2ffbd">
+                    
                     <label for="name" class="label">Your name</label><br>
-                    <input id="name" name="name" type="text" id="message" class="input" required autocomplete="off" /><br>
+                    <input id="name" name="name" type="text" class="input" required autocomplete="off"><br>
+                    
                     <label for="email" class="label">Your e-mail</label><br>
-                    <input id="email" name="email" type="email" class="input" id="email" size="30" required autocomplete="off" /><br>
+                    <input id="email" name="email" type="email" class="input" size="30" required autocomplete="off"><br>
+                    
                     <label for="message" class="label">Your message</label><br>
-                    <textarea id="message" name="message" id="message" class="input" required></textarea>
-                     <!-- Honeypot Spam Protection -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                        <!-- GDPR Checkbox -->
-                        <br>
-                        <label for="gdpr" class="label">
-                            <input type="checkbox" id="gdpr" name="gdpr" required>
-                            <span>I agree to the processing of my personal data in accordance with the <a href="./resources/PDF/Privacy Policy EPI.pdf" target="_blank">privacy policy</a>.</span>
-                        </label>
-                    <br><br>
+                    <textarea id="message" name="message" class="input" required></textarea><br>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <label style="display:none;" aria-hidden="true">
+                        Do not fill this out if you're human:
+                        <input type="text" name="botcheck">
+                    </label>
+            
+                    <!-- GDPR Checkbox -->
+                    <label for="gdpr" class="label">
+                        <input type="checkbox" id="gdpr" name="gdpr" required>
+                        <span>I agree to the processing of my personal data in accordance with the 
+                            <a href="./resources/PDF/Privacy Policy EPI.pdf" target="_blank">privacy policy</a>.
+                        </span>
+                    </label><br><br>
+                    
                     <button type="submit" class="button">Send Message</button>
                 </form>
             </div>
@@ -216,6 +244,7 @@
 
     <!--js-->
     <script src="./resources/JS/slideshowOlo.js"></script>
+    <script src="./resources/JS/modalOlo.js"></script>
 </body>
 
 </html>
