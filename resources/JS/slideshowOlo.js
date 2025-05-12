@@ -15,7 +15,7 @@ const images = [
     './resources/images/olomouc/bathroom 2.webp',
     './resources/images/olomouc/bathroom 3.webp',
     './resources/images/olomouc/bedroom 1.webp',
-    './resources/images/olomouc/bedroom 2.jpg',
+    './resources/images/olomouc/bedroom 2.webp',
     './resources/images/olomouc/hal appartement.webp',
     './resources/images/olomouc/living room.webp',
     './resources/images/olomouc/living room 2.webp',
