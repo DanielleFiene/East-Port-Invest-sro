@@ -565,8 +565,31 @@ label[for="gdpr"] a:hover {
     }
 }
 
+/* =================== Disclaimer Styling =================== */
+.disclaimer {
+  padding: 1.5rem 1rem;
+}
 
+.disclaimer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.disclaimer__text {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .disclaimer__text {
+    font-size: var(--small-font-size);
+    padding: 0 1rem;
+  }
+}
 
 /*=============== FOOTER ===============*/
 
