@@ -472,8 +472,10 @@ button:focus {
   gap: 1rem;
   overflow-x: auto;
   overflow-y: hidden;
+  justify-content: space-between;
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -482,8 +484,8 @@ button:focus {
 
 .thumbnail {
   flex-shrink: 0;
-  width: 200px;
-  max-height: 160px;
+  width: auto;
+  max-height: 250px;
   object-fit: contain;
   border-radius: 5px;
   transition: transform 0.3s ease;
@@ -499,6 +501,7 @@ button:focus {
   .property-thumbnails {
     scrollbar-width: none;           /* Firefox */
     -ms-overflow-style: none;        /* IE/Edge */
+    margin-bottom: 2rem;
   }
 
   .property-thumbnails::-webkit-scrollbar {
