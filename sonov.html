@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Danielle Fiene">
+        <meta name="description" content="Real estate properties in the Czech Republic.">
+        <meta name="keywords" content="real estate, apartments for sale, family homes, commercial properties, Olomouc real estate, Liberec properties, Teplice properties, Broumov homes, property listings, buy real estate, property investment, luxury homes, Czech Republic real estate, prime location properties, modern apartments, residential properties">
+        <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./resources/favicon/site.webmanifest">
+        <link rel="stylesheet" href="resources/CSS/normalize.css" type="text/css">
+        <link rel="stylesheet" href="resources/CSS/detailStyle.css" type="text/css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/56e9e1144f.js" crossorigin="anonymous"></script>
+        <title>East Port Invest s.r.o.</title>
+    </head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">East Port Invest</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+    </header>
+
+    <!-- Property Details Section -->
+    <section class="property-details">
+        <div class="container">
+            <div class="property-top">
+                <div class="property-header">
+                  <h1 class="property-title">Šonov Estate with Independent Guesthouse</h1>
+                  <p class="property-location">Šonov 239 + 240, Czech Republic</p>
+                </div>
+              
+                <div class="property-map">
+                  <a href="https://www.google.com/maps?q=Šonov+240,+Czech+Republic&z=17&t=k" target="_blank" style="position: relative; display: inline-block;">
+                    <iframe 
+                      src="https://www.google.com/maps?q=Šonov+240,+Czech+Republic&z=17&t=k&output=embed" 
+                      frameborder="0" 
+                      style="border:0; pointer-events: none;" 
+                      loading="lazy" 
+                      allowfullscreen>
+                    </iframe>
+                  </a>
+                </div>
+              </div>
+              
+
+                <div class="property-gallery">
+                    <div class="property-image">
+                        <img src="./resources/images/sonov/overzicht/overzicht5.webp" 
+                             alt="Šonov Estate" 
+                             id="current-image"
+                             onClick="openModal(currentIndex)">
+                    </div>
+                    <div class="gallery-navigation">
+                        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                        <button class="next" onclick="changeImage(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                            <!-- modal -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                  <div class="modal-navigation">
+                    <button class="prev" id="prevBtn">&#10094;</button>
+                    <button class="next" id="nextBtn">&#10095;</button>
+                  </div>
+                  <img id="modalImage" src="" alt="">
+                  <div id="thumbnailStrip" class="thumbnail-strip"></div>
+                </div>
+              </div>
+
+                <div class="property-thumbnails">
+                    <img src="./resources/images/sonov/buiten/sonov hoofd buiten mooi.webp" alt="garden" class="thumbnail">
+                    <img src="./resources/images/sonov/main-house/sonov-huiskamer.webp" alt="living rrom" class="thumbnail">
+                    <img src="./resources/images/sonov/main-house/eetkamer2.webp" alt="dining room" class="thumbnail">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="property-info">
+                    <h2>Elegant Renovated Estate with Independent Guesthouse</h2>
+                    <p>This beautifully restored estate blends historic Broumov regional architecture with contemporary comfort, 
+                        offering an exceptional lifestyle in one of the Czech Republic’s most peaceful landscapes. 
+                        Set on a generous 6,256 m² plot with a total of 800 m² usable area, the property comprises a meticulously renovated 
+                        main house, an independent guesthouse, and a multifunctional third building -whether you're seeking a multigenerational family home, a countryside retreat, or a unique investment with rental potential, this property provides complete self-sufficiency, privacy, and security. Every detail — from the underfloor heating and filtered private water system to the integrated alarm network and solar panels — reflects thoughtful, high-quality craftsmanship and sustainability.</p>
+                    <br> 
+                    <h2>Main House Features</h2>
+                    <p>The main building was partially repurposed during its 2006–2008 renovation, converting its former agricultural section into a cozy living area. The ground floor includes a central hallway, living rooms, a kitchen, and bathroom facilities. A former stable now serves as a grand living hall. The upper floor features residential space with its own bathroom and a technical area. Heating is provided through underfloor systems powered by a pellet boiler.</p>
+                    <h3>Interior Layout Overview Of The Main House</h3>
+                    <ul>
+                        <li>3 spacious bedrooms</li>
+                        <li>2 bathrooms</li>
+                        <li>1 seperate toilet</li>
+                        <li>Pure, filtered water from your own private system — independent of municipal sources</li>
+                        <li>10 kW solar panel system</li>
+                        <li>State-of-the-art alarm system with full CCTV security coverage including window sensors on all floors</li>
+                        <li>Covered pool with built-in jet stream</li>
+                        <li>Renovated cellar — ideal for storage or wine</li>
+                        <li>Underfloor heating throughout the entire house</li>
+                        <li>Spacious walk-in closet in the master bedroom</li>
+                        <li>Laundry and utility room</li>
+                        <li>Dedicated office space</li>
+                    </ul>
+                    <div class="property-thumbnails">
+                        <img src="./resources/images/sonov/buiten/sonov paadje mooi.webp" alt="garden" class="thumbnail">
+                        <img src="./resources/images/sonov/main-house/keuken.webp" alt="Kitchen" class="thumbnail">
+                        <img src="./resources/images/sonov/main-house/wintertuin.webp" alt="dining room" class="thumbnail">
+                    </div>
+                    <h2>Independent Guesthouse</h2>
+                    <p>The detached guesthouse is a fully functional and spacious residence in its own right. 
+                        It includes several bedrooms and underfloor electric heating, a bathroom and renovated cellar, making it ideal for guest accommodation, 
+                        multigenerational living, or short-term rentals — offering the same level of privacy, comfort, and high-end security as the main residence.</p>
+                    <h3>Interior Layout Overview Of The Guesthouse</h3>
+                        <ul>
+                            <li>3 spacious bedrooms</li>
+                            <li>1 modern bathroom</li>
+                            <li>Separate toilet</li>
+                            <li>Large living room and separate dining area</li>
+                            <li>Fully equipped kitchen</li>
+                            <li>Pure, filtered water from your own private system</li>
+                            <li>Renovated cellar — ideal for storage or wine</li>
+                            <li>Laundry and utility room</li>
+                            <li>Electric underfloor heating throughout</li>
+                            <li>Private entrance — ideal for guests or rental</li>
+                            <li>State-of-the-art alarm system with full CCTV security coverage including window sensors on all floors</li>
+                        </ul>
+
+                    <div class="property-thumbnails">
+                        <img src="./resources/images/sonov/buiten/sonov app buiten mooi.webp" alt="garden with pool" class="thumbnail">
+                        <img src="./resources/images/sonov/appartment/app-living1.webp" alt="Living room" class="thumbnail">
+                        <img src="./resources/images/sonov/appartment/bathroom 1.webp" alt="Bathroom" class="thumbnail">
+                    </div>
+
+            
+                    <h2>Additional Features</h2>
+                        <p>The third building, a beautifully converted barn, provides essential technical facilities and a charming winter garden. 
+                            Like the main house and guesthouse, it is also secured with a comprehensive alarm system and camera surveillance, 
+                            ensuring full protection across the entire estate. 
+                            Its roof is equipped with photovoltaic panels (10 kW), supporting energy efficiency. 
+                            Behind the garage, you’ll also find a spacious, high-ceilinged greenhouse—perfect for cultivating vegetables and herbs throughout 
+                            the year. 
+                            Between the main buildings, paved areas form a spacious terrace to the covered pool with built-in jet stream.</p>
+                            <div class="property-thumbnails">
+                                <img src="./resources/images/sonov/main-house/wintertuin.webp" alt="Winter garden" class="thumbnail">
+                                <img src="./resources/images/sonov/main-house/kelder2.webp" alt="Cellar" class="thumbnail">
+                                <img src="./resources/images/sonov/main-house/garage.webp" alt="Bathroom" class="thumbnail">
+                            </div>
+
+                    <h2>A Secure and Private Haven</h2>
+                    <p>This property is perfect for those seeking a serene home with income potential or multigenerational living, all in one of the most peaceful parts of the Czech Republic.</p>
+
+                    <br>
+                    <h2>Financial Benefits of Living in the Czech Republic</h2>
+                    <ul>
+                        <li><strong>Low income tax</strong> – 15% for the majority</li>
+                        <li><strong>No wealth tax</strong></li>
+                        <li><strong>Low pension taxation</strong></li>
+                        <li><strong>Favorable vehicle tax</strong></li>
+                        <li><strong>Minimal property taxes</strong></li>
+                    </ul>
+
+                    <br>
+                    <h2>Prime Location in a Stunning Natural Setting</h2>
+                    <div class="property-thumbnails">
+                        <img src="./resources/images/sonov/buiten/sononv landschap.webp" alt="Surroundings" class="thumbnail">
+                        <img src="./resources/images/krinice/Broumovske steny.webp" alt="Broumovske steny" class="thumbnail">
+                        <img src="./resources/images/sonov/buiten/sonov planten mooi.webp" alt="View" class="thumbnail">
+                    </div>
+                <h2>Property Features</h2>
+                        <ul>
+                            <li><strong>Price:</strong> CZK 1,400,000</li>
+                            <li><strong>Usable Area:</strong> 800 m²</li>
+                            <li><strong>Plot Size:</strong> 6,256 m²</li>
+                            <li><strong>Swimming Pool:</strong> 12 m² in-ground</li>
+                            <li><strong>Parking:</strong> 6 spaces + garage</li>
+                            <li><strong>Basement:</strong> 40 m² cellar</li>
+                            <li><strong>Construction:</strong> Mixed material, excellent condition, two-storey</li>
+                            <li><strong>Utilities:</strong> Water, 230V/400V electricity, septic tank</li>
+                            <li><strong>Transport:</strong> Road access, 135m to bus stop</li>
+                            <li><strong>Location:</strong> Countryside, within a protected landscape (CHKO)</li>
+                            <li><strong>Renovation Year:</strong> 2008</li>
+                        </ul>
+
+                        <p>Whether as a family residence, a rental business or a retreat, this Šonov estate combines timeless architecture with modern efficiency in a serene setting.</p>
+                        <p><strong>Contact us today</strong> to schedule a viewing and experience the beauty of this exceptional property firsthand!<br> We speak <strong>Dutch, German, English, and Czech</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="contact-form container">
+                <h3>Contact us</h3>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="909717ad-76f2-4136-a064-200414d2ffbd">
+                    
+                    <label for="name" class="label">Your name</label><br>
+                    <input id="name" name="name" type="text" class="input" required autocomplete="off"><br>
+                    
+                    <label for="email" class="label">Your e-mail</label><br>
+                    <input id="email" name="email" type="email" class="input" size="30" required autocomplete="off"><br>
+                    
+                    <label for="message" class="label">Your message</label><br>
+                    <textarea id="message" name="message" class="input" required></textarea><br>
+                    
+                    <!-- Honeypot Spam Protection -->
+                    <label style="display:none;" aria-hidden="true">
+                        Do not fill this out if you're human:
+                        <input type="text" name="botcheck">
+                    </label>
+            
+                    <!-- GDPR Checkbox -->
+                    <label for="gdpr" class="label">
+                        <input type="checkbox" id="gdpr" name="gdpr" required>
+                        <span>I agree to the processing of my personal data in accordance with the 
+                            <a href="./resources/PDF/Privacy Policy EPI.pdf" target="_blank">privacy policy</a>.
+                        </span>
+                    </label><br><br>
+                    
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+<!--=====================Disclaimer ===================-->
+<div class="disclaimer">
+  <div class="disclaimer__container">
+    <p class="disclaimer__text">
+  * Legal Information: All information on this 
+    website is believed to be accurate but cannot 
+    be guaranteed and does not form part of any 
+    contract. Measurements and distances are 
+    approximate. The property is offered subject 
+    to contract and availability.
+</p>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer ">
+    <div class="footer__info">
+        <!-- Left Column: Contact Info -->
+        <div class="footer__left">
+            <span class="footer__copy"><strong>Contact:</strong><br>
+            <a href="mailto:info@eastportinvest.com"><strong>Email:</strong> info@eastportinvest.com</a>
+            <a href="tel:+420602462962"><strong>Telephone:</strong> +420 602 462 962</a>
+            <a href="tel:+420601387904"><strong>Telephone:</strong> +420 601 387 904</a>
+            </span>
+        </div>
+
+        <!-- Center Column: Address -->
+        <div class="footer__center">
+            <span class="footer__company"><strong>Address:</strong><br>
+                Křinice 133<br>
+                550 01 Křinice<br>
+                Czech Republic<br>
+            </span>
+        </div>
+
+        <!-- Right Column: Company Details -->
+        <div class="footer__right">
+            <span class="footer__company"><strong>Company Details:</strong><br>
+                East Port Invest s.r.o.<br>
+                CIN/IČO: 27169481<br>
+                TIN/DIČ: CZ27169481<br>
+            </span>
+        </div>
+    </div>
+
+    <!-- Footer Legal Links -->
+    <div class="footer__legal-links">
+        <span class="footer__copyright">
+            All rights reserved <i class='bx bxs-copyright'></i> East Port Invest s.r.o. 2025
+        </span>
+
+            <!-- Logo in the center -->
+    <div class="footer__logo">
+        <img src="./resources/logo/Logo EPI.png" alt="Company Logo">
+    </div>
+
+        <div class="footer__legal-links-right">
+            <a href="./resources/PDF/Privacy Policy EPI.pdf" target="_blank">Privacy Policy</a> 
+            <a href="./resources/PDF/Terms and Conditions EPI.pdf" target="_blank">Terms and Conditions</a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!--js-->
+    <script src="./resources/JS/slideshowSonov.js"></script>
+    <script src="./resources/JS/modalSonov.js"></script>
+</body>
+
+</html>

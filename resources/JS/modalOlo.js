@@ -26,6 +26,8 @@ function openModal(startIndex) {
     const modalImage = document.getElementById('modalImage');
     modalImage.src = modalImages[modalIndex];
     modal.style.display = 'flex';
+
+    populateThumbnails();
 }
 
 function closeModal() {
@@ -41,15 +43,43 @@ function changeModalImage(direction) {
     }
     const modalImage = document.getElementById('modalImage');
     modalImage.src = modalImages[modalIndex];
+    updateActiveThumbnail();
 }
 
-// Event listeners (ensure DOM is ready)
+function populateThumbnails() {
+    const strip = document.getElementById('thumbnailStrip');
+    strip.innerHTML = '';
+
+    modalImages.forEach((src, index) => {
+        const thumb = document.createElement('img');
+        thumb.src = src;
+        thumb.alt = `Thumbnail ${index + 1}`;
+        thumb.classList.add('thumbnail');
+        if (index === modalIndex) thumb.classList.add('active');
+
+        thumb.addEventListener('click', () => {
+            modalIndex = index;
+            document.getElementById('modalImage').src = modalImages[modalIndex];
+            updateActiveThumbnail();
+        });
+
+        strip.appendChild(thumb);
+    });
+}
+
+function updateActiveThumbnail() {
+    const thumbs = document.querySelectorAll('#thumbnailStrip img');
+    thumbs.forEach((img, index) => {
+        img.classList.toggle('active', index === modalIndex);
+    });
+}
+
+// Event listeners
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('prevBtn').addEventListener('click', () => changeModalImage(-1));
     document.getElementById('nextBtn').addEventListener('click', () => changeModalImage(1));
     document.getElementById('closeModal').addEventListener('click', closeModal);
 
-    // Optional: click outside image closes modal
     document.getElementById('imageModal').addEventListener('click', (e) => {
         if (e.target.id === 'imageModal') closeModal();
     });

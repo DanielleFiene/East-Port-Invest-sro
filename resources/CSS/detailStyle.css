@@ -326,31 +326,37 @@ button:focus {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 60px;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .modal-content {
   position: relative;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 100vh;
   margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  overflow-x: visible;
+  padding: 1rem;
 }
 
 #modalImage {
-  width: 80%;
-  height: auto;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
-
 
 .close {
   position: absolute;
@@ -372,7 +378,7 @@ button:focus {
 
 .modal-navigation {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -395,27 +401,117 @@ button:focus {
   color: var(--second-color);
 }
 
-/* ==================================Thumbnail Styling====================================== */
+/*=============== THUMBNAIL STRIP ===============*/
+.thumbnail-strip {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem;
+  justify-content: flex-start;
+  max-width: 100%;
+  background-color: var(--body-color);
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.thumbnail-strip img {
+  width: 12vw;              
+  max-width: 150px;
+  height: auto;
+  max-height: 12vh;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 5px;
+  scroll-snap-align: start;
+}
+
+.thumbnail-strip img:hover {
+  transform: scale(1.08);
+}
+
+ /*=======================media queries=====================*/
+@media (max-width: 768px) {
+  .thumbnail-strip {
+    gap: 0.5rem;
+    padding: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;         
+    -ms-overflow-style: none;       
+  }
+
+  .thumbnail-strip::-webkit-scrollbar {
+    display: none;                
+  }
+
+  .thumbnail-strip img {
+    width: 20vw;
+    max-width: 80px;
+    max-height: 10vh;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail-strip img {
+    width: 24vw;
+    max-width: 70px;
+    max-height: 8vh;
+  }
+}
+
+/* ==================================Normal Thumbnail Styling====================================== */
 .property-thumbnails {
-    display: flex; 
-    justify-content: space-between; 
-    margin-top: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
 }
 
 .thumbnail {
-    max-height: 250px; 
-    width: auto;
-    object-fit: contain;
-    border-radius: 5px; 
-    transition: transform 0.3s ease;
-    margin-bottom: 20px; 
+  flex-shrink: 0;
+  width: 200px;
+  max-height: 160px;
+  object-fit: contain;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+  cursor: pointer;
 }
 
 .thumbnail:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .property-thumbnails {
+    scrollbar-width: none;           /* Firefox */
+    -ms-overflow-style: none;        /* IE/Edge */
+  }
+
+  .property-thumbnails::-webkit-scrollbar {
+    display: none;                   /* Chrome/Safari */
+  }
+
+  .thumbnail {
+    width: 40vw;
+    max-width: 120px;
+    max-height: 100px;
+    scroll-snap-align: center;
+  }
+}
 
  /*=======================property main text styling=====================*/
 
@@ -433,6 +529,12 @@ button:focus {
   margin-bottom: 15px;
 }
 
+.property-info ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
 .property-features {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -446,7 +548,6 @@ button:focus {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 
 /*=============== CONTACT FORM===============*/
 .contact-form {
