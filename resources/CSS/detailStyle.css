@@ -516,6 +516,16 @@ button:focus {
   }
 }
 
+.property-thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+.property-thumbnails {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE/Edge */
+}
+
+
  /*=======================property main text styling=====================*/
 
 .property-info {
