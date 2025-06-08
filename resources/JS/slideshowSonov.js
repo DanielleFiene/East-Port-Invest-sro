@@ -27,6 +27,7 @@ const images = [
     './resources/images/sonov/main-house/office.webp',
     './resources/images/sonov/main-house/bathroom1.webp',
     './resources/images/sonov/main-house/zolder 3.webp',
+    './resources/images/sonov/main-house/pelletkachel2.webp',
     './resources/images/sonov/buiten/sonov app buiten mooi.webp',
     './resources/images/sonov/buiten/sonov paadje mooi.webp',
     './resources/images/sonov/buiten/sonov hoofd buiten mooi.webp',
