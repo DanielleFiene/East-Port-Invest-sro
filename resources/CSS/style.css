@@ -330,6 +330,29 @@ nav {
   }
 }
 
+/*============toggle hamburger===========*/
+.nav__toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__menu {
+    display: none; /* standaard verbergen */
+  }
+
+  .nav__menu.show-menu {
+    display: block;
+  }
+}
+
+
 /* Change background header */
 /*
 .scroll-header {
@@ -460,6 +483,20 @@ nav {
 .home__button:focus {
   outline: none;
 }
+
+/*===========media for buttons==========*/
+@media screen and (max-width: 480px) {
+  .home__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home__button {
+    width: 100%;
+  }
+}
+
+
 
 .home__images {
   position: relative;
