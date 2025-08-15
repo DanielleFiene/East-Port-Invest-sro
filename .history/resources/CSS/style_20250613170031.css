@@ -569,12 +569,6 @@ nav {
 }*/
 
 /*=============== POPULAR ===============*/
-.reserved {
-  color: red !important;
-  font-size: var(--small-font-size);
-  margin-bottom: 0.5rem;
-  font-weight: var(--font-semi-bold);
-}
 .popular__container {
   padding: 1rem 0 1.5rem;
 }

@@ -227,7 +227,6 @@ nav {
   color: red;
   font-size: var(--small-font-size);
   margin-bottom: 0.5rem;
-  font-weight: var(--font-semi-bold);
 }
 
 .property-title {
